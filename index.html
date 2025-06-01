@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de Keurtys Gadou, étudiant en Gestion des Entreprises et des Administrations">
+    
+    <title>Keurtys Gadou | Portfolio Professionnel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Spline Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.98/build/spline-viewer.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <span class="loader-letter">K</span>
+            <span class="loader-letter">G</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container">
+            <a href="#home" class="logo">KG</a>
+            
+            <button id="mobile-menu-btn" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#education" class="nav-link">Formation</a>
+                <a href="#portfolio" class="nav-link">Projets</a>
+                <a href="#experience" class="nav-link">Expérience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/cv.pdf" class="btn btn-primary" download>Télécharger CV <i class="fas fa-download"></i></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <spline-viewer 
+            url="https://prod.spline.design/qRsJf9x-LVXeaWPT/scene.splinecode"
+            class="spline-background"
+        ></spline-viewer>
+        
+        <div class="hero-content">
+            <h1 class="hero-title"></h1>
+            <h2 class="hero-subtitle"></h2>
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-outline">Découvrir</a>
+                <a href="#contact" class="btn btn-primary">Me contacter</a>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-down" aria-label="Faire défiler vers le bas">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="section-subtitle">Qui je suis</div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Keurtys Gadou">
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-tabs">
+                        <button class="tab-btn active" data-tab="presentation">Présentation</button>
+                        <button class="tab-btn" data-tab="languages">Langues</button>
+                        <button class="tab-btn" data-tab="skills">Soft Skills</button>
+                        <button class="tab-btn" data-tab="hobbies">Centres d'intérêt</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="presentation">
+                        <p>Je m'appelle Keurtys Gadou et je suis étudiant en Bachelor à l'Université de la Sorbonne Paris Nord, spécialisé en gestion d'entreprise et administration.</p>
+                        <p>Organisé, polyvalent et dynamique, je suis toujours prêt à relever de nouveaux défis. Au cours de ma formation, j'ai acquis des connaissances solides en analyse financière, ce qui me permet de comprendre et d'évaluer les aspects financiers des entreprises avec précision.</p>
+                        <p>Si vous souhaitez en apprendre plus sur moi ou me contacter, n'hésitez pas à explorer ce site ou à télécharger mon CV.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="languages">
+                        <div class="language-item">
+                            <img src="assets/images/flags/fr.png" alt="Français">
+                            <div>
+                                <h3>Français</h3>
+                                <p>Langue Maternelle - Certification Projet Voltaire</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <img src="assets/images/flags/uk.png" alt="Anglais">
+                            <div>
+                                <h3>Anglais</h3>
+                                <p>Cambridge Assessment IGCSE First Language (Juin 2021)</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <img src="assets/images/flags/ch.png" alt="Chinois">
+                            <div>
+                                <h3>Chinois</h3>
+                                <p>Niveau HSK3</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="skills">
+                        <div class="skill-category">
+                            <h3>Intelligence relationnelle</h3>
+                            <p>Je suis sociable, capable de former des relations profondes et durables. Enthousiaste et volontaire, j'ai la capacité de guider et motiver les autres. J'ai participé à des formations en "Gestion des conflits" et "Non-violence" pour améliorer les relations professionnelles.</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Intelligence logico-mathématique</h3>
+                            <p>La rigueur est l'un de mes principaux atouts. J'aime naviguer entre les mathématiques et l'informatique. Mon esprit critique me permet de développer de solides compétences en résolution de problèmes et une adaptation au changement.</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Intelligence émotionnelle</h3>
+                            <p>Je suis empathique, sympathique et toujours optimiste. J'ai la capacité à faire des choix éclairés et à passer à l'action, en mettant en place des solutions de façon objective après réflexion.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="hobbies">
+                        <div class="hobby-item">
+                            <h3>Basket-ball</h3>
+                            <p>Le basket est pour moi synonyme d'équilibre vital. L'effort collectif, le goût du spectacle et la stratégie d'équipe nous ont permis, à mon équipe et à moi, de remporter de nombreux matchs.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h3>Voyages</h3>
+                            <p>J'aime voyager ! Chaque destination m'offre une nouvelle aventure, une nouvelle perspective, une beauté unique à découvrir et un enrichissement culturel inestimable.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <h3>Échecs</h3>
+                            <p>J'ai appris les échecs avec mon grand-père, qui m'a transmis sa passion pour ce jeu. Chaque partie est un moment de partage et de réflexion où je peux exercer ma concentration ainsi que ma créativité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Mes compétences</h2>
+            <div class="section-subtitle">Ce que je maîtrise</div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Exploiter</h3>
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-item">
+                            <h4>Comptabilité</h4>
+                            <p>Maîtrise des outils comptables</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;">85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Fiscalité</h4>
+                            <p>Application des mécanismes fiscaux</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Outils Mathématiques</h4>
+                            <p>Utilisation des techniques mathématiques</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Piloter</h3>
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-item">
+                            <h4>Communication</h4>
+                            <p>Établir des relations de qualité</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;">75%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Anglais des affaires</h4>
+                            <p>Gérer relations internationales</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Démarche portfolio</h4>
+                            <p>Réflexion et présentation du parcours</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Mon parcours académique</h2>
+            <div class="section-subtitle">Formations et diplômes</div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026 - 2027</div>
+                    <div class="timeline-content">
+                        <h3>Master en Finance</h3>
+                        <p>Mastère spécialisé en finance (bac +5)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>Licence CCA + École 42</h3>
+                        <p>Licence Comptabilité, Contrôle, Audit (bac +3)</p>
+                        <p>Université Paris 1, Panthéon Sorbonne</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>DUT GEA</h3>
+                        <p>Diplôme Universitaire de Technologie en Gestion des Entreprises et des Administrations (bac +2)</p>
+                        <p>Université Sorbonne Paris Nord, Paris</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat</h3>
+                        <p>Diplôme spécialisé en Maths et Sciences Économiques et Sociales</p>
+                        <p>Options : Maths expert</p>
+                        <p>Lycée Bilingue de Lyon Ombrosa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Mes projets</h2>
+            <div class="section-subtitle">Réalisations professionnelles</div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="professional">Professionnels</button>
+                <button class="filter-btn" data-filter="personal">Personnels</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="professional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/projects/essor.png" alt="Stage Essor Conseils">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Stage Essor Conseils</h3>
+                            <p>Avril - Mai 2024</p>
+                            <a href="#" class="portfolio-link" data-project="essor">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="professional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/projects/rte.png" alt="Agent administratif RTE">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Agent administratif RTE</h3>
+                            <p>Août 2023</p>
+                            <a href="#" class="portfolio-link" data-project="rte">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="professional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/projects/hcl.png" alt="Stage HCL">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Stage HCL</h3>
+                            <p>Juin 2021</p>
+                            <a href="#" class="portfolio-link" data-project="hcl">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="personal">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/images/projects/portfolio.png" alt="Ancien Portfolio">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Portfolio</h3>
+                            <p>En développement</p>
+                            <a href="#" class="portfolio-link" data-project="Ancien Portfolio">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Expérience professionnelle</h2>
+            <div class="section-subtitle">Mon parcours</div>
+            
+            <!-- <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">2022 - 2023</div>
+                    <div class="experience-content">
+                        <h3>Animateur - Adapei 69</h3>
+                        <p>Organisme de soutien et de services aux personnes handicapées</p>
+                        <ul>
+                            <li>Promotion de l'inclusion sociale</li>
+                            <li>Organisation d'activités de divertissement</li>
+                            <li>Développement des compétences relationnelles et organisationnelles</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-date">2021</div>
+                    <div class="experience-content">
+                        <h3>Stage - HCL (Service biomédical)</h3>
+                        <p>Découverte de l'environnement hospitalier</p>
+                        <ul>
+                            <li>Utilisation de l'outil GMAO (gestion de maintenance assistée par ordinateur)</li>
+                            <li>Étiquetage des équipements et saisie sur GMAO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="reflective-journey">
+                <h3>Mon parcours réflexif</h3>
+                <p>Il est fascinant de réfléchir sur mon parcours et de voir comment mes intérêts se sont façonnés au fil du temps. La comptabilité est entrée dans ma vie comme une révélation, offrant un univers où tout semblait s'emboîter parfaitement. La logique inhérente à la comptabilité m'a captivé dès le début, tandis que l'étude de la fiscalité a élargi mes horizons en me permettant de mieux appréhender le fonctionnement des entreprises.</p>
+                <p>Cependant, au milieu de cette passion grandissante pour le management, j'ai réalisé que les ressources humaines ne suscitaient pas le même enthousiasme en moi. Bien que je comprenne leur importance, mon cœur bat davantage pour les chiffres et les processus organisés. C'est là que je me sens le plus à l'aise et le plus épanoui.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="section-subtitle">Restons en contact</div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:e.kirouani@gmail.com">e.kirouani@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <a href="tel:+33612345678">+33 7 67 21 27 76</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/elias-kirouani-ba977a270/" target="LinkedIn_Profil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Adresse email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">KG</a>
+                    <p>Étudiant en Gestion des Entreprises et des Administrations</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#education">Formation</a></li>
+                        <li><a href="#portfolio">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> e.kirouani@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +33 7 67 21 27 76</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Keurtys Gadou. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer la fenêtre modale">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Retour en haut de la page">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
